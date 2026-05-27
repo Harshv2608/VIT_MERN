@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harsh Vardhan</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        margin: 30px;
+        color: #333;
+    }
+
+    .container{
+        width: 700px;
+        margin: auto;
+    }
+
+    label{
+        font-weight: bold;
+    }
+
+    .required{
+        color: red;
+    }
+
+    input[type="text"],
+    input[type="email"]{
+        padding: 8px;
+        border: 1px solid #ccc;
+        width: 150px;
+    }
+
+    .email-box{
+        width: 320px !important;
+    }
+
+    .name-box{
+        display: flex;
+        gap: 15px;
+    }
+
+    .sub-label{
+        font-size: 12px;
+        color: #555;
+        margin-top: 3px;
+    }
+
+    .stars{
+        color: #e4b17a;
+        font-size: 24px;
+        letter-spacing: 3px;
+    }
+
+    .question{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    h3{
+        margin-bottom: 10px;
+    }
+
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 25px;
+    }
+
+    th{
+        font-size: 12px;
+        font-weight: normal;
+        text-align: center;
+        padding-bottom: 8px;
+    }
+
+    td{
+        padding: 10px;
+        text-align: center;
+    }
+
+    td:first-child{
+        text-align: left;
+        width: 180px;
+    }
+
+    .row-bg{
+        background-color: #f2f2f2;
+    }
+
+    input[type="radio"]{
+        width: 18px;
+        height: 18px;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Name -->
+    <label>Name <span class="required">*</span></label>
+    <br><br>
+
+    <div class="name-box">
+        <div>
+            <input type="text">
+            <div class="sub-label">First</div>
+        </div>
+
+        <div>
+            <input type="text">
+            <div class="sub-label">Last</div>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- Email -->
+    <label>Email <span class="required">*</span></label>
+    <br><br>
+    <input type="email" class="email-box">
+
+    <br><br>
+
+    <!-- Rating -->
+    <label>Your Experience <span class="required">*</span></label>
+
+    <div class="stars">
+        ★ ★ ★ ★ ★
+    </div>
+
+    <div class="question">
+        Overall, how would you rate your experience with us?
+    </div>
+
+    <!-- Satisfaction -->
+    <h3>How satisfied are you with <span class="required">*</span></h3>
+
+    <table>
+        <tr>
+            <th></th>
+            <th>Very Unsatisfied</th>
+            <th>Unsatisfied</th>
+            <th>Neutral</th>
+            <th>Satisfied</th>
+            <th>Very Satisfied</th>
+        </tr>
+
+        <tr class="row-bg">
+            <td>Purchase</td>
+            <td><input type="radio" name="purchase"></td>
+            <td><input type="radio" name="purchase"></td>
+            <td><input type="radio" name="purchase"></td>
+            <td><input type="radio" name="purchase"></td>
+            <td><input type="radio" name="purchase"></td>
+        </tr>
+
+        <tr>
+            <td>Service</td>
+            <td><input type="radio" name="service"></td>
+            <td><input type="radio" name="service"></td>
+            <td><input type="radio" name="service"></td>
+            <td><input type="radio" name="service"></td>
+            <td><input type="radio" name="service"></td>
+        </tr>
+
+        <tr class="row-bg">
+            <td>Company Overall</td>
+            <td><input type="radio" name="company"></td>
+            <td><input type="radio" name="company"></td>
+            <td><input type="radio" name="company"></td>
+            <td><input type="radio" name="company"></td>
+            <td><input type="radio" name="company"></td>
+        </tr>
+    </table>
+
+    <!-- Likelihood -->
+    <h3>How likely are you to <span class="required">*</span></h3>
+
+    <table>
+        <tr>
+            <th></th>
+            <th>Very Unlikely</th>
+            <th>Unlikely</th>
+            <th>Neutral</th>
+            <th>Likely</th>
+            <th>Very Likely</th>
+        </tr>
+
+        <tr class="row-bg">
+            <td>Buy from us again</td>
+            <td><input type="radio" name="buy"></td>
+            <td><input type="radio" name="buy"></td>
+            <td><input type="radio" name="buy"></td>
+            <td><input type="radio" name="buy"></td>
+            <td><input type="radio" name="buy"></td>
+        </tr>
+
+        <tr>
+            <td>Recommend our product to others</td>
+            <td><input type="radio" name="product"></td>
+            <td><input type="radio" name="product"></td>
+            <td><input type="radio" name="product"></td>
+            <td><input type="radio" name="product"></td>
+            <td><input type="radio" name="product"></td>
+        </tr>
+
+        <tr class="row-bg">
+            <td>Recommend our company to others</td>
+            <td><input type="radio" name="company2"></td>
+            <td><input type="radio" name="company2"></td>
+            <td><input type="radio" name="company2"></td>
+            <td><input type="radio" name="company2"></td>
+            <td><input type="radio" name="company2"></td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>
