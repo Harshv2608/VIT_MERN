@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(35,60,100,0.75),
+        rgba(35,60,100,0.75)
+    ),
+    url("https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?w=1600");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+}
+
+/* HEADER */
+
+header{
+    background:#203a63;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 40px;
+}
+
+.logo h1{
+    color:white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:20px;
+    padding:10px 15px;
+}
+
+.active{
+    background:#1b2747;
+    border-radius:5px;
+}
+
+/* TITLE */
+
+.registration{
+    width:85%;
+    margin:auto;
+    margin-top:20px;
+}
+
+.registration h2{
+    text-align:center;
+    font-size:60px;
+    text-shadow:2px 2px 5px black;
+}
+
+.registration hr{
+    margin:15px 0 40px;
+}
+
+/* FORM */
+
+form{
+    width:80%;
+    margin:auto;
+}
+
+.form-row{
+    display:flex;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.form-row label{
+    width:180px;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.form-row input,
+.form-row select{
+    width:400px;
+    height:45px;
+
+    border:none;
+    padding-left:10px;
+
+    font-size:20px;
+}
+
+select{
+    cursor:pointer;
+}
+
+.gender{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.gender input{
+    width:20px;
+    height:20px;
+}
+
+.gender label{
+    width:auto;
+    font-size:26px;
+}
+
+/* TEXTAREA */
+
+.message-row{
+    align-items:flex-start;
+}
+
+textarea{
+    width:650px;
+    height:120px;
+
+    resize:none;
+    padding:10px;
+    font-size:18px;
+}
+
+/* BUTTON */
+
+.btn-container{
+    text-align:center;
+    margin-top:20px;
+}
+
+button{
+    background:#b73228;
+
+    color:white;
+
+    border:none;
+
+    font-size:30px;
+    font-weight:bold;
+
+    padding:15px 40px;
+
+    border-radius:4px;
+
+    cursor:pointer;
+
+    box-shadow:0 5px 10px rgba(0,0,0,.4);
+}
+
+button:hover{
+    background:#96261d;
+}
